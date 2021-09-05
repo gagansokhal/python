@@ -1,0 +1,16 @@
+def oddEvenList(list1,list2):
+    finalList=[]
+    for num in list1:
+        if num % 2 != 0:
+            finalList.append(num)
+    for num in list2:
+        if num % 2 == 0:
+            finalList.append(num)
+
+    print("Final List is : ",finalList)
+
+
+firstlist =  [10, 20, 23, 11, 17]
+secondList = [13, 43, 24, 36, 12]
+
+oddEvenList(firstlist,secondList)
