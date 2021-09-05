@@ -1,0 +1,16 @@
+oriNum=int(input("Enter a Number to see if reverse is same as it or not: "))
+testNum = oriNum
+def checkNum(oriNum):
+    revNum = 0
+    while oriNum > 0 :
+        num1 = oriNum % 10
+        revNum = (revNum * 10) + num1
+        oriNum = int(oriNum / 10)
+
+    if testNum == revNum:
+       print("The original and reverse Number is the same.")
+    else:
+        print("The original and reverse number is not same.")
+    print("revNum is: ",revNum)
+
+checkNum(oriNum)
